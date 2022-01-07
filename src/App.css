@@ -3,6 +3,30 @@
   padding: 0;
   font-family: 'Times New Roman', Times, serif;
 }
+.App {
+  padding: calc(50vh - 831px / 2) calc(50vw - 410px / 2);
+  background-image: url('./background.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.frame {
+  background-image: url('./iphone.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  position: relative;
+  height: 831px;
+  width: 410px;
+}
+.content {
+  width: 359px;
+  height: 715px;
+  overflow-y: scroll;
+  position: absolute;
+  top: 60px;
+  left: 25px;
+}
 .contact{
   display: flex;
   border-bottom: 1px solid #ccc;
@@ -26,7 +50,7 @@
 .contact-info h1 {
   font-family: Georgia, 'Times New Roman', Times, serif;
   margin: 1rem 0;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 .contact-info p {
   font-weight: bold;
